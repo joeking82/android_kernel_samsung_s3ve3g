@@ -121,6 +121,10 @@
 #define PR_SET_PTRACER 0x59616d61
 # define PR_SET_PTRACER_ANY ((unsigned long)-1)
 
+#if 0 //refer to case PR_SET_TIMERSLACK_PID: in kernel/sys.c
+#define PR_SET_TIMERSLACK_PID 41
+#endif
+
 #define PR_SET_CHILD_SUBREAPER 36
 #define PR_GET_CHILD_SUBREAPER 37
 
