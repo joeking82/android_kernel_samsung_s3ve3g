@@ -396,7 +396,7 @@ static void audit_printk_skb(struct sk_buff *skb)
 		sec_avc_log("%s\n", data);
 #endif
 		if (printk_ratelimit())
-			printk(KERN_NOTICE "type=%d %s\n", nlh->nlmsg_type, data);
+			printk(KERN_NOTICE "type=%d \n", nlh->nlmsg_type);
 		else
 			audit_log_lost("printk limit exceeded\n");
 	}
